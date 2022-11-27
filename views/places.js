@@ -1,19 +1,13 @@
-// GET /places
-app.get('/', (req, res) => {
-  let places = [{
-    name: 'H-Thai-ML',
-    city: 'Seattle',
-    state: 'WA',
-    cuisines: 'Thai, Pan-Asian',
-    pic: 'http://placekitten.com/250/250'
-  }, {
+let places = [{
+  name: 'H-Thai-ML',
+  city: 'Seattle',
+  state: 'WA',
+  cuisines: 'Thai, Pan-Asian',
+  pic: '/images/h-thai-ml-tables.png'
+}, {
     name: 'Coding Cat Cafe',
     city: 'Phoenix',
     state: 'AZ',
     cuisines: 'Coffee, Bakery',
-    pic: 'http://placekitten.com/250/250'
-  }]
-  
-    res.render('places/index')
-  })
-  
+    pic: '/images/coffee-cat.jpg'
+}]
